@@ -1,0 +1,129 @@
+/* Базовый сброс и настройка */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif; /* Более "традиционный" шрифт */
+    line-height: 1.7;
+    background-color: #f8f4e8; /* Теплый, землистый фон */
+    color: #4a4a4a; /* Темно-серый текст */
+}
+
+.container {
+    width: 90%; /* Шире, чем в прошлом примере, чтобы контент лучше читался */
+    max-width: 1200px; /* Ограничиваем максимальную ширину */
+    margin: 0 auto; /* Центрируем */
+    padding: 0 20px; /* Небольшие отступы по бокам */
+}
+
+/* Шапка */
+header {
+    background-color: #6b4a38; /* Цвет темной земли */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Легкая тень */
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em; /* Крупный заголовок */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Навигация */
+header nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+header nav li {
+    display: inline-block; /* Элементы в строку */
+    margin: 0 18px;
+}
+
+header nav a {
+    color: #e8d4b9; /* Светло-бежевый цвет ссылок */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+header nav a:hover {
+    color: #fff; /* Цвет при наведении */
+}
+
+/* Основной контент */
+main {
+    padding: 30px 0;
+}
+
+main section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(107, 74, 56, 0.1); /* Тень, соответствующая теме */
+}
+
+main section h2 {
+    color: #8a6d5c; /* Цвет заголовков секций */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e8d4b9; /* Подчеркивание */
+    padding-bottom: 5px;
+}
+
+main p {
+    margin-bottom: 15px;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+main a {
+    color: #6b4a38; /* Цвет ссылок в тексте */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Изображения */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px; /* Скругленные углы у картинок */
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+/* Подвал */
+footer {
+    background-color: #6b4a38;
+    color: #e8d4b9;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* Адаптивность (простейшая) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    header nav li {
+        display: block; /* Ссылки в столбик на маленьких экранах */
+        margin: 10px 0;
+    }
+    .container {
+        width: 95%;
+    }
+}
